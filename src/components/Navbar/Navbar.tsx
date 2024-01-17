@@ -9,10 +9,10 @@ export default function Navbar() {
 
   return (
     <>
-      <AppBar position="sticky">
+      <AppBar position="sticky" className="!bg-transparent">
         <Toolbar className="justify-between font-medium" component="nav">
           <div className="flex space-x-[1rem] items-center text-[1.8rem]">
-            <img src={nav_logo} alt="" className="w-[3rem]" />
+            <img src={nav_logo} alt="logo" className="w-[3rem]" />
             <p>TJC-SPACE</p>
           </div>
           <Stack

@@ -3,3 +3,14 @@
 @tailwind utilities;
 @layer components {
 }
+
+.listTitle {
+  @apply text-[2rem] mb-[1rem] font-bold;
+}
+.listContainer {
+  @apply text-[1.4rem];
+}
+
+footer ul li {
+  @apply cursor-pointer;
+}

@@ -1,6 +1,13 @@
 import "./mycontainer.css";
 // components
-import { Navbar, Hero, About, Galaxy, Satelite } from "../../components";
+import {
+  Navbar,
+  Hero,
+  About,
+  Galaxy,
+  Satelite,
+  Footer,
+} from "../../components";
 export default function MyContainer() {
   return (
     <>
@@ -13,6 +20,7 @@ export default function MyContainer() {
           <Satelite />
         </div>
       </main>
+      <Footer />
     </>
   );
 }

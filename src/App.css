@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 body {
-  @apply bg-secondary;
+  @apply bg-secondary !text-white;
+}
+
+article {
+  @apply max-w-[80rem] mx-auto;
 }
 
 html {

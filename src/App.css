@@ -1,3 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-secondary;
+}
+
 html {
   font-size: 13.5px;
 }

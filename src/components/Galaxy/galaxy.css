@@ -3,7 +3,3 @@
 @tailwind utilities;
 @layer components {
 }
-
-video {
-  object-fit: cover;
-}

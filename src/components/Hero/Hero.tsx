@@ -1,17 +1,20 @@
 import "./hero.css";
+// components
+import { Land } from "../../components";
 // assets
 import space_v from "/earth-bg.mp4";
-// hooks
-import { useEffect } from "react";
+
 export default function Hero() {
-  useEffect(() => {
-    let video = document.querySelector("video") as HTMLVideoElement;
-    video.play();
-  }, []);
   return (
     <>
-      <div className="h-[40rem] text-white flex items-center ">
-        <video src={space_v} loop className="w-full fixed top-0"></video>
+      <div className="min-h-[40rem] text-white flex items-center ">
+        <video
+          src={space_v}
+          autoPlay
+          muted
+          loop
+          className="w-full fixed top-0  "
+        ></video>
         <div className="absolute max-w-[40rem] space-y-[1.5rem] translate-x-[10rem]">
           <h1 className="text-[3rem] font-medium">ORBIT THE EARTH</h1>
           <p className="text-[1.2rem]">
@@ -25,6 +28,7 @@ export default function Hero() {
             LEARN MORE
           </button>
         </div>
+        <Land />
       </div>
     </>
   );

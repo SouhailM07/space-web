@@ -13,9 +13,9 @@ import satelite_img from "/satelite1.jpg";
 export default function Galaxy() {
   return (
     <>
-      <article className="flex justify-between items-center">
+      <article className="flex justify-between lg:flex-row flex-col items-center space-y-[3rem]">
         <section>
-          <img src={satelite_img} alt="img" className="h-[22rem]" />
+          <img src={satelite_img} alt="img" className="lg:w-[37rem] w-full" />
         </section>
         <Details />
       </article>
@@ -27,8 +27,8 @@ let Details = () => {
   return (
     <Card
       component="section"
-      sx={{ color: "white", bgcolor: "transparent", pb: "2rem" }}
-      className="w-[45%] border-sky-800 border-b-2 border-r-2"
+      sx={{ color: "white", bgcolor: "transparent" }}
+      className="max-w-[36rem] lg:w-[45%] border-sky-800 border-b-2 border-r-2 !pb-[2rem] "
     >
       <Typography variant="h5" className="text-sky-800">
         OUR MISSION
@@ -37,7 +37,7 @@ let Details = () => {
         sx={{ px: "0" }}
         title={<Typography variant="h2">RAPIDCAST</Typography>}
       />
-      <CardContent sx={{ pl: "0", pr: "6rem" }}>
+      <CardContent sx={{ pl: "0" }} className="lg:!pr-[6rem] md:pr-[2rem] ">
         <Typography variant="h6" component="p">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos molestiae
           reprehenderit expedita corporis, non doloremque. Consequatur

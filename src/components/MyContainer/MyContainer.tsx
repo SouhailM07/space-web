@@ -17,7 +17,7 @@ export default function MyContainer() {
         <div className="bg-black relative z-[1] space-y-[10rem]">
           <About />
           <Galaxy />
-          <Satelite />
+          {/* <Satelite /> */}
         </div>
       </main>
       {/* <Footer /> */}

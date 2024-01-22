@@ -5,6 +5,7 @@ import { Card, CardContent, Typography } from "@mui/material";
 import { FaReact } from "react-icons/fa";
 import { FaShuttleSpace, FaSpaceAwesome } from "react-icons/fa6";
 import wave from "/wave Gif.gif";
+
 export default function About() {
   interface arrOfCards_type {
     icon: any;
@@ -35,12 +36,12 @@ export default function About() {
 
   return (
     <>
-      <article className=" m-auto max-w-[80rem] ">
-        <ul className="flex justify-between ">
+      <article id="About" className=" m-auto max-w-[80rem] ">
+        <ul className="grid place-items-center gap-y-[2rem]">
           {arrOfCards.map((e, i) => {
             return (
               <Card
-                className="!text-white text-center items-center flex flex-col !bg-sky-900/60 w-[22rem] py-[2rem] space-y-[1rem] !rounded-3xl !relative z-[1]"
+                className="!text-white min-h-[30rem] text-center items-center flex flex-col !bg-sky-900/60 w-[22rem] py-[2rem] space-y-[1rem] !rounded-3xl !relative z-[1]"
                 key={i}
               >
                 <div className="">{e.icon}</div>

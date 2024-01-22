@@ -11,16 +11,16 @@ import {
 export default function MyContainer() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <main>
-        <Hero />
+        {/* <Hero /> */}
         <div className="bg-black relative z-[1] space-y-[10rem]">
           <About />
           <Galaxy />
           <Satelite />
         </div>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

@@ -15,7 +15,11 @@ export default function Galaxy() {
     <>
       <article className="flex justify-between lg:flex-row flex-col items-center space-y-[3rem]">
         <section>
-          <img src={satelite_img} alt="img" className="lg:w-[37rem] w-full" />
+          <img
+            src={satelite_img}
+            alt="img"
+            className="lg:w-[37rem] w-[36rem] mx-auto"
+          />
         </section>
         <Details />
       </article>

@@ -8,13 +8,28 @@ import {
   CardActions,
   Button,
 } from "@mui/material";
+import { useEffect } from "react";
+import scrollReveal from "scrollreveal";
 // assets
 import satelite_img from "/satelite1.jpg";
 export default function Galaxy() {
+  useEffect(() => {
+    const sr = scrollReveal({
+      origin: "left",
+      distance: "100px",
+      duration: 2500,
+      delay: 300,
+    });
+    sr.reveal("#Galaxy__s1");
+    sr.reveal("#Galaxy__s2", { origin: "right" });
+  }, []);
   return (
     <>
-      <article className="flex justify-between lg:flex-row flex-col items-center space-y-[3rem]">
-        <section>
+      <article
+        id="Galaxy"
+        className="flex justify-between lg:flex-row flex-col items-center space-y-[3rem]"
+      >
+        <section id="Galaxy__s1">
           <img
             src={satelite_img}
             alt="img"
@@ -30,6 +45,7 @@ export default function Galaxy() {
 let Details = () => {
   return (
     <Card
+      id="Galaxy__s2"
       component="section"
       sx={{ color: "white", bgcolor: "transparent" }}
       className="max-w-[36rem] lg:w-[45%] !rounded-none border-sky-800 border-b-2 border-r-2 !pb-[2rem] "

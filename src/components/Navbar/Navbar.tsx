@@ -49,7 +49,7 @@ export default function Navbar() {
                     role="listitem"
                     key={i}
                   >
-                    {e}
+                    <a href={`#${e}`}>{e}</a>
                   </li>
                 );
               })}

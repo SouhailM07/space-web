@@ -13,3 +13,6 @@ article {
 html {
   font-size: 13.5px;
 }
+body {
+  @apply overflow-x-hidden;
+}

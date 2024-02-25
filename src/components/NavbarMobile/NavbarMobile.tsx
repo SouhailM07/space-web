@@ -34,7 +34,7 @@ export default function NavbarMobile() {
           {arrOfLinks.map((e, i) => {
             return (
               <li role="listitem" key={i}>
-                {e}
+                <a href={`#${e}`}>{e}</a>
               </li>
             );
           })}

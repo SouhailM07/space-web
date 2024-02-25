@@ -1,10 +1,13 @@
 import "./about.css";
 // mui
 import { Card, CardContent, Typography } from "@mui/material";
+// hooks
+import { useEffect } from "react";
+import scrollReveal from "scrollreveal";
 // assets
 import { FaReact } from "react-icons/fa";
 import { FaShuttleSpace, FaSpaceAwesome } from "react-icons/fa6";
-import wave from "../../../public/wave-Gif.webm";
+import wave from "/wave-Gif.webm";
 
 export default function About() {
   interface arrOfCards_type {
@@ -33,10 +36,18 @@ export default function About() {
       txt: "Part of the Global Positioning System (GPS) used for navigation",
     },
   ];
-
+  useEffect(() => {
+    const sr = scrollReveal({
+      origin: "top",
+      distance: "100px",
+      duration: 2500,
+      delay: 300,
+    });
+    sr.reveal("#Technology ul li", { interval: "300" });
+  }, []);
   return (
     <>
-      <section id="About" className=" m-auto max-w-[80rem] ">
+      <section id="Technology" className=" m-auto max-w-[80rem] ">
         <ul role="list" className="grid place-items-center gap-y-[2rem]">
           {arrOfCards.map((e, i) => {
             return (

@@ -8,14 +8,30 @@ import {
   CardActions,
   Button,
 } from "@mui/material";
+// hooks
+import { useEffect } from "react";
+import scrollReveal from "scrollreveal";
 // assets
 import satelite_img from "/satelite2.jpg";
 export default function Satelite() {
+  useEffect(() => {
+    const sr = scrollReveal({
+      origin: "left",
+      distance: "100px",
+      duration: 2500,
+      delay: 300,
+    });
+    sr.reveal("#Satellite__s1");
+    sr.reveal("#Satellite__s2", { origin: "right" });
+  }, []);
   return (
     <>
-      <article className="flex justify-between lg:flex-row flex-col items-center space-y-[3rem]">
+      <article
+        id="Satellite"
+        className="flex justify-between lg:flex-row flex-col items-center space-y-[3rem]"
+      >
         <Details />
-        <section>
+        <section id="Satellite__s2">
           <img
             src={satelite_img}
             alt="img"
@@ -30,6 +46,7 @@ export default function Satelite() {
 let Details = () => {
   return (
     <Card
+      id="Satellite__s1"
       component="section"
       sx={{ color: "white", bgcolor: "transparent" }}
       className="max-w-[36rem] lg:w-[45%] !rounded-none pl-4 border-sky-800 border-b-2 border-l-2 !pb-[2rem] "

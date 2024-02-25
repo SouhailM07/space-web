@@ -37,7 +37,7 @@ const Top = () => {
     { img: phone_logo, label: "+91 123456789" },
   ];
   return (
-    <article className="flex justify-between">
+    <article className="flex justify-between max-md:flex-col max-md:space-y-[5rem]">
       <section>
         <h1 className="font-bold text-[2.5rem]">Be Ready To Grow</h1>
         <p className="font-medium text-[1.2rem] py-[1rem]">
@@ -73,7 +73,7 @@ const Top = () => {
           {contactLinks.map((e, i) => {
             return (
               <li key={i} className="flex space-x-[1rem] items-center">
-                <img src={e.img} alt="" className="h-[1.5rem]" />
+                <img src={e.img} alt="logo" className="h-[1.5rem]" />
                 <p>{e.label}</p>
               </li>
             );
@@ -88,9 +88,9 @@ const Bottom = () => {
   let socialLinks: string[] = [instagram_logo, facebook_logo, linkedin_logo];
 
   return (
-    <article className="flex justify-between text-[1.2rem] text-gray-500 items-center">
+    <article className="flex justify-between text-[1.2rem] text-gray-500 items-center max-md:flex-col-reverse">
       <section>copyright © 2024 by TCJ</section>
-      <section>
+      <section className="max-lg:my-[2rem]">
         <Stack component="ul" direction="row" spacing="2rem">
           {socialLinks.map((e, i) => {
             return (

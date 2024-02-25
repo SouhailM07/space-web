@@ -6,3 +6,4 @@ export { default as About } from "./About/About";
 export { default as Galaxy } from "./Galaxy/Galaxy";
 export { default as Satelite } from "./Satelite/Satelite";
 export { default as Footer } from "./Footer/Footer";
+export { default as NavbarMobile } from "./NavbarMobile/NavbarMobile";

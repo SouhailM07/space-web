@@ -7,7 +7,7 @@ import space_v from "/earth-bg.mp4";
 export default function Hero() {
   return (
     <>
-      <article className="min-h-[40rem] text-white flex items-center lg:justify-start justify-center lg:text-left text-center ">
+      <div className="min-h-[40rem] text-white flex items-center lg:justify-start justify-center lg:text-left text-center ">
         <video
           src={space_v}
           autoPlay
@@ -29,7 +29,7 @@ export default function Hero() {
           </button>
         </div>
         <Land />
-      </article>
+      </div>
     </>
   );
 }

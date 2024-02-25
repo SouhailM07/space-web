@@ -11,14 +11,14 @@ import {
 export default function MyContainer() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <main>
         <Hero />
-        <article className="bg-black relative z-[1] space-y-[3rem] lg:space-y-[10rem]">
+        <div className="bg-black py-[4rem] relative z-[1] space-y-[3rem] lg:space-y-[10rem]">
           <About />
           <Galaxy />
           <Satelite />
-        </article>
+        </div>
       </main>
       <Footer />
     </>

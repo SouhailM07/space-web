@@ -47,7 +47,7 @@ const Top = () => {
         <div className="flex">
           <input
             type="text"
-            className="w-[20rem] bg-transparent border-[1px] outline-none indent-[1rem]"
+            className="w-[20rem] bg-transparent border-b border-t border-l outline-none indent-[1rem]"
             placeholder="Email@example.com"
           />
           <button className="text-white px-[1.5rem] bg-blue-500 py-[0.8rem] rounded-r-md">

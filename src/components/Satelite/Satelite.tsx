@@ -32,7 +32,7 @@ let Details = () => {
     <Card
       component="section"
       sx={{ color: "white", bgcolor: "transparent" }}
-      className="max-w-[36rem] lg:w-[45%] border-sky-800 border-b-2 border-l-2 !pb-[2rem] "
+      className="max-w-[36rem] lg:w-[45%] !rounded-none pl-4 border-sky-800 border-b-2 border-l-2 !pb-[2rem] "
     >
       <Typography variant="h5" className="text-sky-800">
         OUR MISSION

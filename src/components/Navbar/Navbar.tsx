@@ -3,26 +3,40 @@ import "./navbar.css";
 import { useState, createContext } from "react";
 // mui
 import { AppBar, Toolbar, Stack } from "@mui/material";
+// components
+import { NavbarMobile } from "../../components";
 // assets
 import nav_logo from "/logo.png";
+import menubar_logo from "/bars-solid.svg";
 
 export const ToggleContext: any = createContext("");
 
 export default function Navbar() {
   let [toggleMenuBar, setToggleMenuBar] = useState<boolean>(false);
   const arrOfLinks: string[] = ["About", "Technology", "Galaxy", "Satellite"];
+  const handleToggle = () => {
+    setToggleMenuBar(true);
+  };
 
   return (
     <>
-      <ToggleContext.provider value={{ toggleMenuBar, setToggleMenuBar }}>
+      <ToggleContext.Provider value={{ toggleMenuBar, setToggleMenuBar }}>
         <AppBar position="sticky" className="!bg-transparent">
           <Toolbar className="justify-between font-medium" component="nav">
             <div className="flex space-x-[1rem] items-center text-[1.8rem]">
               <img src={nav_logo} alt="logo" className="w-[3rem]" />
               <p>TJC-SPACE</p>
             </div>
+            <img
+              className="hidden max-md:block h-[2rem] w-[2rem]"
+              src={menubar_logo}
+              alt="logo"
+              aria-label="toggle menubar"
+              role="button"
+              onClick={handleToggle}
+            />
             <Stack
-              className="text-[1.2rem]"
+              className="text-[1.2rem]  max-md:!hidden"
               component="ul"
               direction="row"
               spacing="2rem"
@@ -35,8 +49,9 @@ export default function Navbar() {
               Login
             </button>
           </Toolbar>
+          {toggleMenuBar && <NavbarMobile />}
         </AppBar>
-      </ToggleContext.provider>
+      </ToggleContext.Provider>
     </>
   );
 }

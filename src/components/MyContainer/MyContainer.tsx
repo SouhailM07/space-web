@@ -13,14 +13,14 @@ export default function MyContainer() {
     <>
       {/* <Navbar /> */}
       <main>
-        {/* <Hero /> */}
-        <div className="bg-black relative z-[1] space-y-[10rem]">
+        <Hero />
+        <article className="bg-black relative z-[1] space-y-[3rem] lg:space-y-[10rem]">
           <About />
           <Galaxy />
           <Satelite />
-        </div>
+        </article>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

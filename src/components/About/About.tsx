@@ -36,7 +36,7 @@ export default function About() {
 
   return (
     <>
-      <article id="About" className=" m-auto max-w-[80rem] ">
+      <section id="About" className=" m-auto max-w-[80rem] ">
         <ul className="grid place-items-center gap-y-[2rem]">
           {arrOfCards.map((e, i) => {
             return (
@@ -61,7 +61,7 @@ export default function About() {
             className="h-[200px] w-full  object-cover mix-blend-screen -translate-y-[9rem] relative z-[0]"
           />
         </div>
-      </article>
+      </section>
     </>
   );
 }

@@ -2,12 +2,12 @@ import "./hero.css";
 // components
 import { Land } from "../../components";
 // assets
-import space_v from "/earth-bg.mp4";
+import space_v from "/earth-bg.webm";
 
 export default function Hero() {
   return (
     <>
-      <div className="min-h-[40rem] mx-auto max-w-[100rem] text-white flex items-center lg:justify-start justify-center lg:text-left text-center ">
+      <article className="min-h-[40rem] mx-auto max-w-[100rem] text-white flex items-center lg:justify-start justify-center lg:text-left text-center ">
         <video
           src={space_v}
           autoPlay
@@ -15,7 +15,7 @@ export default function Hero() {
           loop
           className="w-full fixed top-0  h-full left-0"
         ></video>
-        <div className="absolute max-w-[44rem] space-y-[1.5rem] lg:translate-x-[10rem]">
+        <section className="absolute max-w-[44rem] space-y-[1.5rem] lg:translate-x-[10rem]">
           <h1 className="text-[3rem] font-medium">ORBIT THE EARTH</h1>
           <p className="text-[1.2rem] px-[2rem]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
@@ -27,9 +27,9 @@ export default function Hero() {
           <button className="bg-blue-500 py-[1rem] px-[1.5rem] rounded-md">
             LEARN MORE
           </button>
-        </div>
+        </section>
         <Land />
-      </div>
+      </article>
     </>
   );
 }

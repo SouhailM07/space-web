@@ -29,9 +29,14 @@ export default function NavbarMobile() {
           component="ul"
           direction="column"
           spacing="2rem"
+          role="list"
         >
           {arrOfLinks.map((e, i) => {
-            return <li key={i}>{e}</li>;
+            return (
+              <li role="listitem" key={i}>
+                {e}
+              </li>
+            );
           })}
         </Stack>
       </div>

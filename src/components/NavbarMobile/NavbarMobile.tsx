@@ -13,7 +13,7 @@ export default function NavbarMobile() {
   const handleClose = () => setToggleMenuBar(false);
   return (
     <>
-      <div className="absolute h-[20rem] text-center bg-[#4b5563d4] top-0 z-[99] w-full">
+      <div className="absolute h-[20rem] text-center bg-slate-900 top-0 z-[99] w-full">
         <div className="flex justify-end p-4">
           <img
             src={close_logo}
@@ -25,7 +25,7 @@ export default function NavbarMobile() {
           />
         </div>
         <Stack
-          className="text-[1.2rem]"
+          className="text-[1.3rem] font-medium"
           component="ul"
           direction="column"
           spacing="2rem"

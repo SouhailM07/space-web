@@ -27,14 +27,7 @@ export default function Navbar() {
               <img src={nav_logo} alt="logo" className="w-[3rem]" />
               <p>TJC-SPACE</p>
             </section>
-            <img
-              className="hidden max-md:block h-[2rem] w-[2rem]"
-              src={menubar_logo}
-              alt="logo"
-              aria-label="toggle menubar"
-              role="button"
-              onClick={handleToggle}
-            />
+
             <Stack
               role="list"
               className="text-[1.2rem]  max-md:!hidden"
@@ -54,9 +47,19 @@ export default function Navbar() {
                 );
               })}
             </Stack>
-            <button className="px-[1.2rem] py-[0.6rem] rounded-xl text-white border-2 border-white">
-              Login
-            </button>
+            <div className="flex gap-x-[2rem] items-center">
+              <button className="px-[1.2rem] py-[0.6rem] rounded-xl text-white border-2 border-white">
+                Login
+              </button>
+              <img
+                className="hidden max-md:block h-[2rem] w-[2rem]"
+                src={menubar_logo}
+                alt="logo"
+                aria-label="toggle menubar"
+                role="button"
+                onClick={handleToggle}
+              />
+            </div>
           </Toolbar>
           {toggleMenuBar && <NavbarMobile />}
         </AppBar>

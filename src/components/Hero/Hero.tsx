@@ -28,7 +28,7 @@ export default function Hero() {
           autoPlay
           muted
           loop
-          className="w-full fixed top-0  h-full left-0"
+          className="w-auto lg:w-full fixed top-0  h-full left-0 "
         ></video>
         <section
           id="About__s1"
